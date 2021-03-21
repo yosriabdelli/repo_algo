@@ -1,0 +1,22 @@
+PROCEDURE decaler(var t:ARRAY_OF INTEGER,d:INTEGER,tmp:STRING,var p:INTEGER)
+    p:=d;
+BEGIN
+    WHILE (t[p] > tmp AND p >= 1) DO
+        t[p-1]:=t[p];
+        p:=p-1;
+    END_WHILE
+END
+
+
+ALGORITHM insertion_Sort
+VAR
+    i,n,tmp:INTEGER;
+    tab:ARRAY_OF INTEGER[50];
+BEGIN
+    FOR i FROM 2 TO n DO
+        IF (tab[i] < tab[i-1]) THEN
+            tmp:=t[i];
+            decaler(t,d,tmp,p);
+        END_IF
+    END_FOR
+END
