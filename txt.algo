@@ -1,0 +1,38 @@
+//checkpoint algorithm 
+ALGORITHM number_Characters
+    VAR
+    nbr : INTEGER:=0;
+    ch : STRING:="The length of the sentence";
+BEGIN
+    nbr:= ch.len;
+    Write(nbr);
+END
+
+ALGORITHM number_word
+    VAR
+    nbr : INTEGER:=0;
+    ch : STRING:="The length of the sentence";
+    i : INTEGER;
+BEGIN 
+	FOR i:=0 to i < ch.LEN  DO
+        if(ch[i]=" ") then
+	    nbr:= nbr+1;
+    END_FOR  
+	Write(nbr);
+END
+
+ALGORITHM number_vowels
+    VAR
+    nbr : INTEGER:=0;
+    i : INTEGER;
+    ch : STRING:="The length of the sentence";
+    BEGIN
+        FOR i:=0 to i<ch.len DO
+            IF (ch[i]="a" OR ch[i]="e" OR ch[i]="i" OR ch[i]="o" OR ch[i]="u" OR ch[i]="y") THEN
+                nbr:= nbr+1;
+            ELSE
+                nbr:=0;
+            END_IF
+        END_FOR
+        Write(nbr);
+	END		

@@ -1,0 +1,43 @@
+//checkpoint procedural 
+FUNCTION read() : INTEGER
+VAR
+    n : INTEGER;
+BEGIN
+    REPEAT
+        read(n);
+    UNTIL (n<=0)
+    RETURN n ;
+END
+
+PROCEDURE Dot_Product(n:INTEGER, var tab:ARRAY_OF INTEGER,tab2:ARRAY_OF INTEGER)
+VAR
+    product:INTEGER;
+BEGIN
+    FOR i FROM 0 TO n DO
+        product:= product + tab1[i]*tab2[i];
+    END_FOR
+    Write(product);
+END
+
+
+
+FUNCTION Dot_Product(n:INTEGER, var tab:ARRAY_OF INTEGER,tab2:ARRAY_OF INTEGER) : INTEGER
+VAR
+    product:INTEGER;
+BEGIN
+    FOR i FROM 0 TO n DO
+        product:= product + tab1[i]*tab2[i];
+    END_FOR
+    RETURN product;
+END
+
+ALGORITHM determines_Vectors
+VAR
+    i,n,pro:INTEGER;
+    tab1,tab2:ARRAY_OF INTEGER[50];
+BEGIN
+    n:=read();
+
+    Dot_Product(n,tab1,tab2);
+    pro:=Dot_Product(n,tab1,tab2);
+END

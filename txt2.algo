@@ -1,0 +1,64 @@
+//checkpoint lenear data
+//solution 1
+ALGORITHM sum_Distinct
+VAR 
+    i,j,som,k : INTEGER;
+    tab,tab2 : ARRAY_OF INTEGER[20];
+    k:=0;
+BEGIN 
+
+    FOR i:=0 to i < tab.length  DO
+        FOR j:=0 to j < tab2.length  DO
+            IF (tab[i]<>tab[j]) THEN
+                k+=1;
+            END_IF
+
+        END_FOR
+        IF (K=tab2.length) THEN
+            Write (tab [i]);
+            som+=tab[i];
+        ELSE
+            Write("non sont destinct");
+        END_IF
+    END_FOR
+
+END
+
+//solution 2 sum_Distinct
+
+ALGORITHM sum_Distinct
+VAR 
+    htab : HASH_TABLE<INTEGER,INTEGER>;
+BEGIN
+    FOR i:=0 in htab DO
+
+    END_FOR
+END
+
+
+//solution Sum of overlapping
+
+
+ALGORITHM sum_Overlapping
+VAR 
+    i,j,som,k : INTEGER;
+    tab,tab2 : ARRAY_OF INTEGER[20];
+    k:=0;
+BEGIN 
+
+    FOR i:=0 to i < tab.length  DO
+        FOR j:=0 to j < tab2.length  DO
+            IF (tab[i]=tab[j]) THEN
+                k+=1;
+            END_IF
+
+        END_FOR
+        IF (K=tab2.length) THEN
+            Write (tab [i]);
+            som+=tab[i];
+        ELSE
+            Write("non Overlapping");
+        END_IF
+    END_FOR
+
+END
